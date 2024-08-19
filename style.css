@@ -34,7 +34,7 @@ li  {
     justify-content: center;
 }
 
-li a {
+li:first-child {
     font-size: 8em;
     background: linear-gradient(rgb(255, 255, 255), blue);
     -webkit-background-clip: text;
@@ -48,9 +48,19 @@ main {
 }
 
 section {
+    position: relative;
     display: grid;
     margin:  0 auto;
    max-width: 700px;
+}
+
+section p {
+    display: grid;
+    position:absolute;
+    transform: translateX(725px);
+    max-width: 200px;
+    max-height: auto;
+    padding: 1%;
 }
 
 
